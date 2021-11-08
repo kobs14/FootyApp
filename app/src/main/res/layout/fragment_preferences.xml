@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="560dp">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_settings"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/img_preferences"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="preferences"
+        android:layout_toRightOf="@id/img_preferences"
+        android:textSize="30dp"
+        android:textColor="#0F636E"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView_display"
+        android:text="display"
+        android:layout_below="@id/img_preferences"
+        android:textSize="25dp"
+        android:textColor="#083BBD"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView_darkMode"
+        android:text="Light/Dark Mode"
+        android:layout_below="@id/txtView_display"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:textColor="?attr/textColor"
+        />
+
+    <ImageView
+        android:layout_width="57dp"
+        android:layout_height="40dp"
+        android:id="@+id/img_some_arrow"
+        android:layout_below="@id/txtView_display"
+        android:layout_toRightOf="@id/txtView_darkMode"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/ic_arrow"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_some_arrow"
+        android:layout_below="@id/txtView_display"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="0dp"
+        android:id="@+id/checkBox_darkMode"
+        android:buttonTint="#7412BA"
+        android:background="?attr/bgColor"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView_notifications"
+        android:text="notifications"
+        android:layout_below="@id/txtView_darkMode"
+        android:textSize="25dp"
+        android:textColor="#083BBD"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView_enableNotifications"
+        android:text="Enable notifications"
+        android:layout_below="@id/txtView_notifications"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:textColor="?attr/textColor"
+        />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtView_enableNotifications"
+        android:layout_below="@id/txtView_notifications"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:clickable="false"
+        android:background="#5A4B4B"
+        android:id="@+id/checkBox_notifications"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(in the future)"
+        android:layout_below="@id/txtView_notifications"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/checkBox_notifications"
+        android:layout_marginLeft="10dp"
+        android:textColor="?attr/metaTextColor"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView_changeFavoriteTeam"
+        android:text="Change favorites"
+        android:layout_below="@id/txtView_enableNotifications"
+        android:textSize="25dp"
+        android:textColor="#083BBD"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView_changeFav"
+        android:text="change it"
+        android:layout_below="@id/txtView_changeFavoriteTeam"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:textColor="?attr/textColor"
+        />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:id="@+id/img_arrow"
+        android:layout_below="@id/txtView_changeFavoriteTeam"
+        android:layout_toRightOf="@id/txtView_changeFav"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/ic_arrow"
+        />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtView_enableNotifications"
+        android:layout_below="@id/txtView_changeFavoriteTeam"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="36.5dp"
+        android:buttonTint="#7412BA"
+        android:id="@+id/checkBox_favorites"
+        android:background="?attr/bgColor"
+        />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_did_you_know"
+        android:text="Did You Know ?"
+        android:layout_below="@id/txtView_changeFav"
+        android:textSize="20dp"
+        android:textColor="#E91E63"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="95dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/img_didYoyKnow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/qmark_img"
+        android:layout_below="@id/txtView_changeFav"
+        android:layout_marginTop="38dp"
+       android:layout_marginLeft="60dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView_about"
+        android:text="About"
+        android:layout_below="@id/button_did_you_know"
+        android:textSize="25dp"
+        android:textColor="#083BBD"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView_buildVersion"
+        android:text="Build version"
+        android:textStyle="bold"
+        android:layout_below="@id/txtView_about"
+        android:textSize="20dp"
+        android:textColor="?attr/textColor"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.0.0"
+        android:layout_below="@+id/txtView_buildVersion"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="?attr/textColor"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"/>
+
+</RelativeLayout>

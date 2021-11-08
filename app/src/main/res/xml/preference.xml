@@ -1,0 +1,46 @@
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="Change Favorite Team">
+
+       <EditTextPreference
+           android:key="checkbox_preference"
+           android:title="Search Team"
+           />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="display">
+
+        <CheckBoxPreference
+            android:key="checkbox_preference"
+            android:title="Dark mode"
+            android:defaultValue="checkbox_preference"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="notifications">
+
+        <CheckBoxPreference
+            android:key="checkbox_preference"
+            android:title="Enable notifications"
+            android:defaultValue="checkbox_preference"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="about"
+        android:title="About">
+        <Preference
+            app:key="version"
+            android:title="Build version"
+            android:summary="1.0.0">
+
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

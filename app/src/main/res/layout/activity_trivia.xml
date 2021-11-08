@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TriviaActivity"
+    android:background="?attr/bgColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/someRelativeLayoutId">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:id="@+id/triviaGif"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="Gif"
+
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:id="@+id/imgTextTrivia"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="125dp"
+        android:src="@drawable/img_trivia"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:id="@+id/triviaGifTwo"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="285dp"
+        android:contentDescription="Gif"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtViewTriviaTitle"
+        android:text="-Here Some Trivia About-"
+        android:layout_below="@+id/triviaGif"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="?attr/textSuperTitlesColor"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtViewTriviaTitleLeagueAndTeam"
+        android:text="-The Premier League And Arsenal-"
+        android:layout_below="@+id/txtViewTriviaTitle"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="?attr/textSuperTitlesColor"
+        />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/someRelativeLayoutId">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/question_whoIsTheOldestClub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/ic_arrow_drop_down"
+        android:text="Who is the oldest club in the Premier League ?"
+        android:textAlignment="textStart"
+        android:textColor="#C8229E"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/answer_whoIsTheOldestClub"
+        android:layout_below="@id/question_whoIsTheOldestClub"
+        android:text="The Oldest club is..."
+        android:visibility="visible"
+        android:textSize="14dp"
+        android:enabled="false"
+        android:textColor="?attr/textColor"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_whoIsTheNewestClub"
+        android:text="Who is the newest club in the Premier League ?"
+        android:layout_below="@+id/answer_whoIsTheOldestClub"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textAlignment="textStart"
+        android:drawableRight="@drawable/ic_arrow_drop_down"
+        android:textColor="#C8229E"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/answer_whoIsTheNewestClub"
+        android:layout_below="@id/question_whoIsTheNewestClub"
+        android:text="The Newest club is..."
+        android:visibility="visible"
+        android:textSize="14dp"
+        android:textColor="?attr/textColor"
+        android:enabled="false"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_whichStadiumInThePremierLeagueIsTheBigger"
+        android:text="Which Stadium in the Premier League is the bigger ?"
+        android:layout_below="@+id/answer_whoIsTheNewestClub"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textAlignment="textStart"
+        android:drawableRight="@drawable/ic_arrow_drop_down"
+        android:textColor="#C8229E"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/answer_whichStadiumInThePremierLeagueIsTheBigger"
+        android:layout_below="@id/question_whichStadiumInThePremierLeagueIsTheBigger"
+        android:text="The Bigger Stadium is..."
+        android:visibility="visible"
+        android:textSize="14dp"
+        android:textColor="?attr/textColor"
+        android:enabled="false"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_whichPlayerInYourTeamMostExpansiveSigningWise"
+        android:text="Which player in your team is the Most Expansive(Signing Wise) ?"
+        android:layout_below="@+id/answer_whichStadiumInThePremierLeagueIsTheBigger"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textAlignment="textStart"
+        android:drawableRight="@drawable/ic_arrow_drop_down"
+        android:textColor="#C8229E"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/answer_whichPlayerInYourTeamMostExpansiveSigningWise"
+        android:layout_below="@id/question_whichPlayerInYourTeamMostExpansiveSigningWise"
+        android:text="The Most expansive player is..."
+        android:visibility="visible"
+        android:textSize="14dp"
+        android:textColor="?attr/textColor"
+        android:enabled="false"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_whichTeamScoreMostGoalsThisSeason"
+        android:text="Which Team Score Most Goals This Season so far ?"
+        android:layout_below="@+id/answer_whichPlayerInYourTeamMostExpansiveSigningWise"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textAlignment="textStart"
+        android:drawableRight="@drawable/ic_arrow_drop_down"
+        android:textColor="#C8229E"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/answer_whichTeamScoreMostGoalsThisSeason"
+        android:layout_below="@id/question_whichTeamScoreMostGoalsThisSeason"
+        android:text="The Team that score most goals this season is is..."
+        android:visibility="visible"
+        android:textSize="14dp"
+        android:textColor="?attr/textColor"
+        android:enabled="false"
+        android:textStyle="bold"
+        />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/question_howManyGoalsYourTeamScoreAndSuffered"
+            android:text="How Many Goals Arsenal Score ? How many Goals Arsenal Suffered ?"
+            android:layout_below="@+id/answer_whichTeamScoreMostGoalsThisSeason"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:textAlignment="textStart"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:textColor="#C8229E"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer_howManyGoalsYourTeamScoreAndSuffered"
+            android:layout_below="@id/question_howManyGoalsYourTeamScoreAndSuffered"
+            android:text="Arsenal scored this season so far..."
+            android:visibility="visible"
+            android:textSize="14dp"
+            android:textColor="?attr/textColor"
+            android:enabled="false"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/question_whoIsTheYoungestPlayerInYourTeam"
+            android:text="Who is The youngest player in Arsenal ?"
+            android:layout_below="@+id/answer_howManyGoalsYourTeamScoreAndSuffered"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:textAlignment="textStart"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:textColor="#C8229E"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer_whoIsTheYoungestPlayerInYourTeam"
+            android:layout_below="@id/question_whoIsTheYoungestPlayerInYourTeam"
+            android:text="The Youngest player in Arsenal is..."
+            android:visibility="visible"
+            android:textSize="14dp"
+            android:textColor="?attr/textColor"
+            android:enabled="false"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/question_whatIsTheAgeAverageInYourTeam"
+            android:text="What Is The player's Age Average In Arsenal ?"
+            android:layout_below="@+id/answer_whoIsTheYoungestPlayerInYourTeam"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:textAlignment="textStart"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:textColor="#C8229E"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer_whatIsTheAgeAverageInYourTeam"
+            android:layout_below="@id/question_whatIsTheAgeAverageInYourTeam"
+            android:text="The player's age average is..."
+            android:visibility="visible"
+            android:textSize="14dp"
+            android:textColor="?attr/textColor"
+            android:enabled="false"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/question_whoIsRheTallestPlayer"
+            android:text="Who is the tallest player In Arsenal ?"
+            android:layout_below="@+id/answer_whatIsTheAgeAverageInYourTeam"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:textAlignment="textStart"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:textColor="#C8229E"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer_whoIsRheTallestPlayer"
+            android:layout_below="@id/question_whoIsRheTallestPlayer"
+            android:text="The tallest player in Arsenal is..."
+            android:visibility="visible"
+            android:textSize="14dp"
+            android:textColor="?attr/textColor"
+            android:enabled="false"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/question_inWhichGameMostGoalsHasScored"
+            android:text="In which game of the season were the most goals scored ?"
+            android:layout_below="@+id/answer_whoIsRheTallestPlayer"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:textAlignment="textStart"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:textColor="#C8229E"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer_inWhichGameMostGoalsHasScored"
+            android:layout_below="@id/question_inWhichGameMostGoalsHasScored"
+            android:text="The game in which the most goals were scored is.."
+            android:visibility="visible"
+            android:textSize="14dp"
+            android:textColor="?attr/textColor"
+            android:enabled="false"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/question_biggestWin"
+            android:text="Biggest Win of Arsenal this season ?"
+            android:layout_below="@+id/answer_inWhichGameMostGoalsHasScored"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:textAlignment="textStart"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:textColor="#C8229E"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer_biggestWin"
+            android:layout_below="@id/question_biggestWin"
+            android:text="The Biggest win of Arsenal this season is.."
+            android:visibility="visible"
+            android:textSize="14dp"
+            android:textColor="?attr/textColor"
+            android:enabled="false"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

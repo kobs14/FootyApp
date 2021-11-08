@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iconMatchDetails"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_gravity="left" />
+
+    <TextView
+        android:id="@+id/txtViewRowDetails"
+        android:textColor="#0000FF"
+        android:text="Stadium: stamford bridge"
+        android:paddingLeft="10dip"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:textSize="17dp"
+        android:layout_height="wrap_content"
+        android:textColorLink="@color/red"
+        android:linksClickable="true"/>
+</LinearLayout>

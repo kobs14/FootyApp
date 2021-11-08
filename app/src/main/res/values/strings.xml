@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FootyApp</string>
+    <string name="title_matches">Matches</string>
+    <string name="title_league">League</string>
+    <string name="title_myTeam">My Team</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_preferences">Preferences</string>
+
+    <string name="leagues_prompt">Choose a league</string>
+
+    <string-array name="league_names">
+        <item>None</item>
+        <item>Premier League</item>
+        <item>Ligue 1</item>
+        <item>Série A</item>
+        <item>Bundesliga</item>
+        <item>Primera División</item>
+    </string-array>
+
+</resources>

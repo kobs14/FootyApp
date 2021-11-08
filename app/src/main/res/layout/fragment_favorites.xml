@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myRelativeLayout">
+
+    <TableLayout
+        android:id="@+id/league_crest"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:background="@drawable/ic_icons8_the_premier_league"
+        />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="0dp"
+        android:id="@+id/favorite_matches_table"
+        android:layout_below="@+id/league_crest">
+
+        <TableRow
+            android:id="@+id/favorite_matches_tbl_header"
+            android:background="?attr/theTitlesColor">
+
+            <TextView
+                android:id="@+id/textViewMatchDay"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="Match Day"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="?attr/textTitlesColor"/>
+
+
+            <TextView
+                android:id="@+id/textViewHomeTeam"
+                android:layout_height="60dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="Home Team"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="?attr/textTitlesColor"/>
+
+            <TextView
+                android:id="@+id/textViewVs"
+                android:layout_height="60dp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="vs."
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="?attr/textTitlesColor"
+                />
+
+
+            <TextView
+                android:id="@+id/textViewAwayTeam"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="Away Team"
+                android:layout_weight="6"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="?attr/textTitlesColor">
+            </TextView>
+        </TableRow>
+
+        <ListView
+            android:id="@+id/listView_favorite_matches"
+            android:layout_width="match_parent"
+            android:layout_height="410dp"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="8dp"
+            android:nestedScrollingEnabled="true"/>
+
+    </TableLayout>
+</RelativeLayout>
